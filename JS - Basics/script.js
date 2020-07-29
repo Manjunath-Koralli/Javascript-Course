@@ -38,9 +38,36 @@ console.log(firstName1 + ' is a ' + age1 + ' year old ' + job1 + '. Is he marrie
 //Variable mutation - before a number now a string
 age1 = "twenty three";
 job1 = 'driver';
-alert(firstName1 + ' is a ' + age1 + ' year old ' + job1 + '. Is he married? ' + isMarried);
+//alert(firstName1 + ' is a ' + age1 + ' year old ' + job1 + '. Is he married? ' + isMarried);
 
-var lastName1 = prompt('What is the last name?');
-console.log(firstName1 + " " + lastName1);
+//var lastName1 = prompt('What is the last name?');
+//console.log(firstName1 + " " + lastName1);
 
+/* 
+    Basic Operators
+*/
+var year, yearJohn,yearMark;
+year = 2020;
+yearJohn = year - 18;
+yearMark = year - 20;
 
+console.log(year);
+
+//Math operators
+console.log(year + 2);
+console.log(year * 2);
+console.log(year / 10);
+
+//logical operators
+var ageJohn = 28;
+var ageMark = 33;
+var johnOlder = ageJohn > ageMark; //false
+johnOlder = ageJohn < ageMark; //true
+console.log(johnOlder);
+
+//typeof Operator
+console.log(typeof johnOlder); //boolean
+console.log(typeof ageJohn); //number
+console.log(typeof firstName1); //string
+var x;
+console.log(typeof x); //undefined
