@@ -71,3 +71,22 @@ console.log(typeof ageJohn); //number
 console.log(typeof firstName1); //string
 var x;
 console.log(typeof x); //undefined
+
+
+/*
+    Operator Precedence
+*/
+fullAge = 18;
+var isFullAge = year - yearJohn >= fullAge; //true
+console.log(isFullAge);
+
+//Grouping, Multiple Assignments
+var x,y;
+x = y = (3 + 5) * 4 - 6; //8  8 4 - 6 //32 - 6 // 26 
+// first y = 26 //then x = y 
+console.log(x , y);
+
+x *= 2 // x = x * 2; 
+console.log(x);
+x++ // x = x + 1
+console.log(x);
