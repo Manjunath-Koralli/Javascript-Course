@@ -28,3 +28,19 @@ var firstName1 = "Manjunath";
 var age1 = 23;
 console.log(firstName1 + ' ' + age1);
 
+var job1, isMarried;
+job1 = "Teacher";
+isMarried = false;
+
+//Type coercion isMarriedconveretd to string in concole.log
+console.log(firstName1 + ' is a ' + age1 + ' year old ' + job1 + '. Is he married? ' + isMarried);
+
+//Variable mutation - before a number now a string
+age1 = "twenty three";
+job1 = 'driver';
+alert(firstName1 + ' is a ' + age1 + ' year old ' + job1 + '. Is he married? ' + isMarried);
+
+var lastName1 = prompt('What is the last name?');
+console.log(firstName1 + " " + lastName1);
+
+
