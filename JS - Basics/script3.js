@@ -17,3 +17,4 @@ else if (age >= 20 && age < 30){
 else {
     console.log(firstName1 + ' is a man');
 }
+
