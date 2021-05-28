@@ -1,14 +1,14 @@
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict';
 
-/*
+
 ///////////////////////////////////////
 // Using Google, StackOverflow and MDN
 
 // PROBLEM 1:
 // We work for a company building a smart home thermometer. 
-    Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. 
-      Keep in mind that sometimes there might be a sensor error."
+// Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. 
+// Keep in mind that sometimes there might be a sensor error."
 
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
@@ -116,7 +116,7 @@ const calcTempAmplitudeBug = function (t1, t2) {
 const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
 // A) IDENTIFY
 console.log(amplitudeBug);
-*/
+
 
 ///////////////////////////////////////
 // Coding Challenge #1
@@ -134,7 +134,7 @@ TEST DATA 1: [17, 21, 23]
 TEST DATA 2: [12, 5, -5, 0, 4]
 */
 
-/*
+
 // 1) Understanding the problem
 // - Array transformed to string, separated by ...
 // - What is the X days? Answer: index + 1
@@ -159,5 +159,5 @@ const printForecast = function (arr) {
   console.log('...' + str);
 };
 printForecast(data1);
-*/
+
 
