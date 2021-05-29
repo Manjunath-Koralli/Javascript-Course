@@ -1,6 +1,6 @@
 'use strict';
 
-const secretNumber = Math.trunc((Math.random() * 20) + 1);
+let secretNumber = Math.trunc((Math.random() * 20) + 1);
 console.log(secretNumber)
 let score = 0;
 let highScore;
@@ -8,6 +8,7 @@ let highScore;
 const fetchHighScore = function () {
     highScore = localStorage.getItem('highScore');
     document.querySelector('.highscore').textContent = highScore;
+
 }
 
 const displayMessage = function (message) {
@@ -33,9 +34,18 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.number').textContent = secretNumber;
         document.querySelector('body').style.backgroundColor = '#60b347';
         document.querySelector('.number').style.width = '30rem';
+
+        setTimeout(function () {
+            secretNumber = Math.trunc((Math.random() * 20) + 1);
+            console.log(secretNumber)
+        });
     }
     else if (guess !== secretNumber) {
-        if (score > 0) {
+        document.querySelector('body').style.backgroundColor = '#222';
+        document.querySelector('.number').textContent = '?';
+        document.querySelector('.number').style.width = '15rem';
+
+        if (score > 1) {
             score = score - 1;
             //document.querySelector('.message').textContent = '🎉 Correct Number!';
             displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
